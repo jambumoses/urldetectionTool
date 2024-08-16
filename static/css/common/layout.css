@@ -1,0 +1,19 @@
+.layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: url("../../imgs/bgDefault.jpg") no-repeat center;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.layout main {
+  background-color: transparent;
+  margin-left: 5%;
+  margin-right: 100px;
+  margin-top: 150px;
+  height: 68%;
+  border-radius: 10px;
+}

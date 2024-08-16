@@ -1,0 +1,162 @@
+{% extends '../layout.html' %}
+
+<!-- context -->
+{% block content %}
+
+<section class="report-page">
+    <section class="filter">
+        
+            <h1>Report</h1>
+        
+        
+        <form method="post">
+
+            <span class="searchInput">
+                <input type="search" name="search" placeholder="Search" id="" />
+                <button type="submit" class="icon">
+                    <i style="color: var(--white);" class="fa fa-search"></i>
+                </button>
+            </span>
+        </form>
+    </section>
+
+    <section class="report-tables">
+        <table border="0">
+            <thead>
+                <tr class="header">
+                    <th>Host</th>
+                    <th>Scanned URL</th>
+                    <th>Prediction</th>
+                    <th>Risk Level</th>
+                    <th>Results</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>isbat</td>
+                    <td>https://www.isbat.com</td>
+                    <td>Dangerous</td>
+                    <td>
+                        <progress class="progress-danger" id="file" value="62" max="100" > 32% </progress>
+                    </td>
+                    <td>Results</td>
+                    <td>45:00:00 01/01/2024</td>
+                </tr>
+                <tr>
+                    <td>isbat</td>
+                    <td>https://www.isbat.com</td>
+                    <td>Dangerous</td>
+                    <td>
+                        <progress class="progress-warning" id="file" value="62" max="100" > 32% </progress>
+                    </td>
+                    <td>Results</td>
+                    <td>45:00:00 01/01/2024</td>
+                </tr>
+                <tr>
+                    <td>isbat</td>
+                    <td>https://www.isbat.com</td>
+                    <td>Dangerous</td>
+                    <td>
+                        <progress class="progress-secure" id="file" value="62" max="100" > 32% </progress>
+                    </td>
+                    <td>Results</td>
+                    <td>45:00:00 01/01/2024</td>
+                </tr>
+                <tr>
+                    <td>isbat</td>
+                    <td>https://www.isbat.com</td>
+                    <td>Dangerous</td>
+                    <td>
+                        <progress class="progress-warning" id="file" value="62" max="100" > 32% </progress>
+                    </td>
+                    <td>Results</td>
+                    <td>45:00:00 01/01/2024</td>
+                </tr>
+                
+                <tr>
+                    <td>isbat</td>
+                    <td>https://www.isbat.com</td>
+                    <td>Dangerous</td>
+                    <td>
+                        <progress class="progress-danger" id="file" value="62" max="100" > 32% </progress>
+                    </td>
+                    <td>Results</td>
+                    <td>45:00:00 01/01/2024</td>
+                </tr>
+
+                <tr>
+                    <td>isbat</td>
+                    <td>https://www.isbat.com</td>
+                    <td>Dangerous</td>
+                    <td>
+                        <progress class="progress-secure" id="file" value="62" max="100" > 32% </progress>
+                    </td>
+                    <td>Results</td>
+                    <td>45:00:00 01/01/2024</td>
+                </tr>
+
+                <tr>
+                    <td>isbat</td>
+                    <td>https://www.isbat.com</td>
+                    <td>Dangerous</td>
+                    <td>
+                        <progress class="progress-danger" id="file" value="62" max="100" > 32% </progress>
+                    </td>
+                    <td>Results</td>
+                    <td>45:00:00 01/01/2024</td>
+                </tr>
+                
+                <tr>
+                    <td>isbat</td>
+                    <td>https://www.isbat.com</td>
+                    <td>Dangerous</td>
+                    <td>
+                        <progress class="progress-secure" id="file" value="62" max="100" > 32% </progress>
+                    </td>
+                    <td>Results</td>
+                    <td>45:00:00 01/01/2024</td>
+                </tr>
+
+                <tr>
+                    <td>isbat</td>
+                    <td>https://www.isbat.com</td>
+                    <td>Dangerous</td>
+                    <td>
+                        <progress class="progress-danger" id="file" value="62" max="100" > 32% </progress>
+                    </td>
+                    <td>Results</td>
+                    <td>45:00:00 01/01/2024</td>
+                </tr>
+                
+                <tr>
+                    <td>isbat</td>
+                    <td>https://www.isbat.com</td>
+                    <td>Dangerous</td>
+                    <td>
+                        <progress class="progress-secure" id="file" value="62" max="100" > 32% </progress>
+                    </td>
+                    <td>Results</td>
+                    <td>45:00:00 01/01/2024</td>
+                </tr>
+
+                <tr>
+                    <td>isbat</td>
+                    <td>https://www.isbat.com</td>
+                    <td>Dangerous</td>
+                    <td>
+                        <progress class="progress-danger" id="file" value="62" max="100" > 32% </progress>
+                    </td>
+                    <td>Results</td>
+                    <td>45:00:00 01/01/2024</td>
+                </tr>
+                
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </section>
+</section>
+
+<!-- end of context -->
+{% endblock content %}

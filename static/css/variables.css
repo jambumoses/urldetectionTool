@@ -1,0 +1,26 @@
+:root {
+  --primaryColor: #ffffff;
+  --secondaryColor: #bcedff;
+  --primaryFont: poppins;
+  --fontBold: PoppinsExtraBold800;
+  --fontBlack: PoppinsBlack900;
+  --secureColor: #6ccaf3;
+  --warningColor: #ff9100;
+  --dangerColor: #ff0000;
+  --white: #ffffff;
+  --black: #0000;
+  --textColor: #707070;
+  --fiatWhite: #c5c5c5;
+
+  /* heading */
+  --LogoSize: 35px;
+  --headingSize: 35px;
+
+
+  /* sizes */
+  --defaultFont: poppins;
+  --defaultSize: 13px;
+
+  --buttonbg: #bcedff;
+}
+

@@ -1,0 +1,56 @@
+* {
+  font-family: poppins, sans-serif;
+  font-size: 13px;
+  color: rgb(71, 71, 71);
+}
+
+html {
+  padding: 0px;
+  margin: 0px;
+  border-spacing: 0px;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  border-spacing: 0px;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+input,
+textarea,
+button {
+  outline: none !important;
+}
+
+form {
+  display: block;
+}
+
+progress {
+  height: 10px;
+  border-radius: 30px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: whitesmoke;
+  border-radius: 30px;
+}
+
+.progress-danger::-webkit-progress-value {
+  background-color: var(--dangerColor);
+  border-radius: 30px;
+}
+
+.progress-secure::-webkit-progress-value {
+  background-color: var(--secureColor);
+  border-radius: 30px;
+}
+
+.progress-warning::-webkit-progress-value {
+  background-color: var(--warningColor);
+  border-radius: 30px;
+}

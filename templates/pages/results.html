@@ -1,0 +1,39 @@
+{% extends '../layout.html' %}
+
+<!-- context -->
+{% block content %}
+
+<section class="result-page">
+    <h2 class="heading">Scanned Results</h2>
+    <table border="0">
+        <tr>
+            <td class="title">Scanned URL</td>
+            <td class="data">--</td>
+        </tr>
+        <tr>
+            <td class="title">Prediction</td>
+            <td class="data">--</td>
+        </tr>
+        <tr>
+            <td class="title">Results</td>
+            <td class="data">--</td>
+        </tr>
+        <tr>
+            <td class="title">Date</td>
+            <td class="data">--</td>
+        </tr>
+    </table>
+
+    <div class="alert-info">
+        <h2 style="color: var(--warningColor);">Alert ! Not Secure</h2>
+        <small>This URL looks to be harmful to your system please don't click on it</small>
+    </div>
+
+    <div class="risk-level" style="color: var(--warningColor) !important;">
+        <span>Risk:</span>
+        <span>Medium</span>
+    </div>
+</section>
+
+<!-- end of context -->
+{% endblock content %}

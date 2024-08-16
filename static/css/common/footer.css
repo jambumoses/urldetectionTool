@@ -1,0 +1,17 @@
+footer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: var(--fiatWhite);
+  font-size: var(--defaultSize);
+  font-family: var(--defaultFont);
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0px 5%;
+  width: 100%;
+  height: 50px;
+  bottom: 0px;
+}

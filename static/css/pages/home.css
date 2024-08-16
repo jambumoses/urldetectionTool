@@ -1,0 +1,60 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.home-page h2 {
+  margin: 1% auto;
+  margin-left: 6%;
+  margin-top: 60px;
+  font-family: var(--fontBold);
+  font-size: 20px;
+  color: #8f96f5;
+  text-transform: capitalize;
+}
+
+.home-page p {
+  margin: 1% auto;
+  margin-left: 6%;
+  width: 300px;
+  font-family: var(--primaryFont);
+  font-size: var(--defaultSize);
+  color: var(--fiatWhite);
+}
+
+.home-page form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6%;
+  margin-top: 2%;
+}
+
+.home-page form input {
+  width: 50%;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--white);
+  padding: 0px 20px;
+  color: var(--textColor);
+  text-align: center;
+  font-size: var(--defaultSize);
+}
+
+.home-page form button {
+  margin-top: 2%;
+  border-radius: 30px;
+  height: 40px;
+  width: 200px;
+  border: none;
+  text-transform: capitalize;
+  font-size: var(--defaultSize);
+  font-family: var(--primaryFont);
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--buttonbg);
+  color: var(--white);
+}

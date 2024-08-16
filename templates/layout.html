@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{page_title}}</title>
+    <link rel="stylesheet" href="{% static '/css/main.css' %}" />
+
+    <link
+      rel="stylesheet"
+      href="{% static 'lib/fontawesome-free-6.1.2-web/css/all.min.css' %}"
+    />
+    <script src="{% static 'lib/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'lib/fontawesome-free-6.1.2-web/js/all.min.js' %}"></script>
+  </head>
+  <body>
+    <section class="layout">
+
+    {% include 'common/header.html' with page=page %}
+
+    {% include 'common/sidebar.html' %}
+
+
+      <main>
+    <!-- content -->
+    {% block content %}
+    <!-- main context -->
+    {% endblock %}
+      </main>
+
+    {% include 'common/footer.html' %}
+
+      
+    </section>
+  </body>
+
+  <script src="{% static 'lib/jquery-3.6.0.min.js' %}"></script>
+  <script src="{% static 'js/sidebar.js' %}"></script>
+</html>

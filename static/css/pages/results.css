@@ -1,0 +1,74 @@
+.result-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  background-color: var(--primaryColor);
+  border-radius: 10px;
+}
+
+.result-page .heading {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-family: var(--primaryFont);
+  margin: 0px 5%;
+  color: var(--textColor);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+}
+
+.result-page table {
+  margin: 0px 5%;
+}
+.result-page table tr {
+  height: 40px;
+}
+
+.result-page table tr .title {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 17px;
+  color: var(--textColor);
+  font-family: PoppinsMedium500;
+}
+
+.result-page table tr .data {
+  text-align: right;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: var(--textColor);
+  font-family: var(--defaultFont);
+}
+
+.result-page .alert-info {
+  margin: 0px 5%;
+}
+
+.result-page .alert-info h2 {
+  font-size: 20px;
+  font-family: var(--fontBlack);
+  color: inherit;
+  text-transform: capitalize;
+}
+
+.result-page .alert-info small {
+  display: block;
+  font-size: var(--defaultSize);
+  font-family: var(--defaultFont);
+  color: var(--textColor);
+  width: 230px;
+}
+
+.result-page .risk-level {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 5%;
+}
+
+.result-page .risk-level span{
+    color: inherit;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-size: 18px;
+    font-family: PoppinsMedium500 !important;
+}

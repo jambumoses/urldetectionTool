@@ -1,0 +1,37 @@
+header {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  height: 150px;
+  width: 100%;
+  top: 0px;
+}
+
+header h1 {
+  font-family: var(--fontBold);
+  color: var(--white);
+  font-size: var(--LogoSize);
+  margin: 0px 5%;
+}
+
+.long-nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent !important;
+  height: 60px !important;
+  width: 85% !important;
+  margin: 0px 5% !important;
+  top: 0px;
+  border-bottom: 1px solid silver;
+}
+
+.long-nav h1{
+  font-family: var(--fontBold);
+  color: var(--white);
+  font-size: 25px;
+  margin: 0px;
+}

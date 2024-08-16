@@ -1,0 +1,15 @@
+{% extends '../layout.html' %}
+
+<!-- context -->
+{% block content %}
+<section class="home-page">
+    <h2>Is This Link Safe ?</h2>
+    <p>Examine the URL you want to visit to detect malware, fake websites and phishing attacks</p>
+    <form method="post">
+        <input type="text" placeholder="Enter your URL here" name="url" required />
+        <button type="submit">analayze</button>
+    </form>
+</section>
+
+<!-- end of context -->
+{% endblock content %}

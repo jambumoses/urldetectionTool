@@ -1,0 +1,137 @@
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: -70px !important;
+  height: 115%;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.dashboard-page section {
+  background-color: var(--primaryColor);
+  height: 49%;
+  border-radius: 10px;
+}
+
+.dashboard-page .statistics {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-page .statistics .top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  height: 50%;
+}
+
+.dashboard-page .statistics .top h1 {
+  margin: 0px;
+  margin-left: 20px;
+  font-size: 40px;
+  font-family: var(--fontBold);
+  color: var(--textColor);
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.dashboard-page .statistics .bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50%;
+  background-color: transparent;
+}
+
+.bottom .alert {
+  display: flex;
+  background-color: transparent;
+  /* height: 90%; */
+  height: 100px;
+  margin: 0px 20px;
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+
+.alert .count {
+  width: 60px;
+  background-color: transparent;
+}
+
+.alert .count span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: black;
+  font-size: 20px;
+  font-family: PoppinsMedium500;
+  font-weight: bold;
+  color: var(--white);
+  margin-top: 10px;
+}
+
+.alert .alert-info {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+}
+
+.alert .alert-info h2 {
+  font-family: var(--fontBlack);
+  color: var(--white);
+  margin: 5px 10px;
+  font-size: 17px;
+}
+
+.alert .alert-info small {
+  font-size: 13px;
+  text-decoration: underline;
+  margin-top: 3%;
+  margin-left: 10px;
+  color: var(--white);
+}
+
+.dashboard-page .dash-tables {
+  border-radius: 0px !important;
+  overflow-y: auto;
+  overflow-x: auto;
+  padding: 0px;
+}
+
+.dash-tables table {
+  width: 100%;
+  position: relative;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  /* margin-top: 10px; */
+}
+
+.dash-tables table thead{
+    position: relative;
+    width: 100%;
+}
+
+
+.dash-tables table thead tr th {
+  margin-top: 10px !important;
+  font-size: 16px;
+  font-family: var(--fontBold);
+  border-bottom: 1px solid silver;
+}
+
+.dash-tables table tbody tr td {
+  text-align: center;
+  padding-top: 10px;
+  text-transform: initial;
+  color: var(--textColor);
+  border-bottom: 1px solid silver;
+
+  /*   padding: 10px 0px; */
+}
