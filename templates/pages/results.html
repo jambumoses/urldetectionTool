@@ -3,16 +3,17 @@
 <!-- context -->
 {% block content %}
 
+{% if url %}
 <section class="result-page">
     <h2 class="heading">Scanned Results</h2>
     <table border="0">
         <tr>
             <td class="title">Scanned URL</td>
-            <td class="data">--</td>
+            <td class="data">{{ url }}</td>
         </tr>
         <tr>
             <td class="title">Prediction</td>
-            <td class="data">--</td>
+            <td class="data">{{ "Fraudulent" if prediction else "Legitimate" }} </td>
         </tr>
         <tr>
             <td class="title">Results</td>
@@ -31,9 +32,10 @@
 
     <div class="risk-level" style="color: var(--warningColor) !important;">
         <span>Risk:</span>
-        <span>Medium</span>
+        <span>{{ api_result.status }}</span>
     </div>
 </section>
+{% endif %}
 
 <!-- end of context -->
 {% endblock content %}

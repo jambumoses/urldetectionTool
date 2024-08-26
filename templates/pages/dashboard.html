@@ -66,80 +66,26 @@
                 </tr>
             </thead>
             <tbody>
-
+                {% for url in urls %}
                 <tr>
                     <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
+                    <td>{{ url.url }}</td>
+                    <td>
+                        {% if url.prediction %}
+                        dangerous
+                        {% else %}
+                            Legitimate
+                        {% endif %}
+                    </td>
                     <td>
                         <progress class="progress-danger" id="file" value="62" max="100" > 32% </progress>
                     </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
-                </tr>
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
-                    <td>
-                        <progress class="progress-warning" id="file" value="62" max="100" > 32% </progress>
-                    </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
-                </tr>
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
-                    <td>
-                        <progress class="progress-secure" id="file" value="62" max="100" > 32% </progress>
-                    </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
-                </tr>
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
-                    <td>
-                        <progress class="progress-warning" id="file" value="62" max="100" > 32% </progress>
-                    </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
-                </tr>
-                
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
-                    <td>
-                        <progress class="progress-danger" id="file" value="62" max="100" > 32% </progress>
-                    </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
+                    <td>{{ url.api_result.status }}</td>
+                    <td>{{ url.created_at }}</td>
                 </tr>
 
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
-                    <td>
-                        <progress class="progress-secure" id="file" value="62" max="100" > 32% </progress>
-                    </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
-                </tr>
-
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
-                    <td>
-                        <progress class="progress-danger" id="file" value="62" max="100" > 32% </progress>
-                    </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
-                </tr>
+                {% endfor %}
+   
             </tbody>
             <tfoot></tfoot>
         </table>
