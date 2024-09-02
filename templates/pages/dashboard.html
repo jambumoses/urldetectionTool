@@ -13,12 +13,12 @@
 
             <div class="alert" style="background-color: var(--secureColor);">
                 <div class="count">
-                    <span>14</span>
+                    <span>{{harmlessCount}}</span>
                 </div>
                 <div class="alert-info">
                     <h2>
                         Alert! <br/>
-                        Secure URL
+                        Harmless URL
                     </h2>
                     <small>Risk: Low</small>
                 </div>
@@ -26,27 +26,27 @@
 
             <div class="alert" style="background-color: var(--warningColor);">
                 <div class="count">
-                    <span>14</span>
+                    <span>{{suspiciousCount}}</span>
                 </div>
                 <div class="alert-info">
                     <h2>
                         Alert! <br/>
-                        Secure URL
+                        Suspicious URL
                     </h2>
-                    <small>Risk: Low</small>
+                    <small>Risk: Medium</small>
                 </div>
             </div>
 
             <div class="alert" style="background-color: var(--dangerColor);">
                 <div class="count">
-                    <span>14</span>
+                    <span>{{maliciousCount}}</span>
                 </div>
                 <div class="alert-info">
                     <h2>
                         Alert! <br/>
-                        Secure URL
+                        Malicious URL
                     </h2>
-                    <small>Risk: Low</small>
+                    <small>Risk: High</small>
                 </div>
             </div>
 
@@ -57,7 +57,7 @@
         <table border="0">
             <thead>
                 <tr class="header">
-                    <th>Host</th>
+                    <th>Id</th>
                     <th>Scanned URL</th>
                     <th>Prediction</th>
                     <th>Risk Level</th>
@@ -66,31 +66,75 @@
                 </tr>
             </thead>
             <tbody>
-                {% for url in urls %}
-                <tr>
-                    <td>isbat</td>
-                    <td>{{ url.url }}</td>
+                {% for report in allreports %}
+                <tr onclick="">
+                    <script>
+                        setTimeout(() => {
+                            progressBar('progress-{{report.id}}',
+                            {% if report.malicious < 10 and report.suspicious < 10 and report.harmless > 50 %}
+                                {{report.harmless}}
+                            {% elif report.malicious < 30 or report.suspicious > 50 and report.harmless < 50 %}
+                                {{report.suspicious}}
+                            {% elif report.malicious > 30 or report.suspicious > 30 and report.harmless < 50 %}
+                                {{report.malicious}}
+                            {% else %}
+                                10
+                            {% endif %}
+                            ) //end of function
+                        }, 1000);
+                    </script>
+
+                    <td> {{report.id}}</td>
+                    <td title="{{ report.url }}"> <a href="/result/{{report.id}}"> <script> document.write("{{ report.url }}".slice(0,25)+" ..."); </script> </a> </td>
                     <td>
-                        {% if url.prediction %}
-                        dangerous
+                        {% if report.malicious < 10 and report.suspicious < 10 and report.harmless > 50 %}
+                            Legitemate
+                        {% elif report.malicious < 30 or report.suspicious > 50 and report.harmless < 50 %}
+                            Warning
+                        {% elif report.malicious > 30 or report.suspicious > 30 and report.harmless < 50 %}
+                            Dangerous
                         {% else %}
-                            Legitimate
+                            Undetected
                         {% endif %}
                     </td>
                     <td>
-                        <progress class="progress-danger" id="file" value="62" max="100" > 32% </progress>
+                        <progress style="cursor: pointer;" class="
+                        {% if report.malicious < 10 and report.suspicious < 10 and report.harmless > 50 %}
+                            progress-secure
+                        {% elif report.malicious < 30 or report.suspicious > 50 and report.harmless < 50 %}
+                            progress-warning
+                        {% elif report.malicious > 30 or report.suspicious > 30 and report.harmless < 50 %}
+                            progress-danger
+                        {% else %}
+                            Undetected
+                        {% endif %}
+
+                        "
+                        title=""
+                        id="progress-{{report.id}}" 
+                        value="0" max="100" > 32% </progress>
                     </td>
-                    <td>{{ url.api_result.status }}</td>
-                    <td>{{ url.created_at }}</td>
+                    <td>{{ report.category }}</td>
+                    <td>{{ report.created_at }}</td>
                 </tr>
 
                 {% endfor %}
+
    
             </tbody>
             <tfoot></tfoot>
         </table>
     </section>
 </section>
+
+<script>
+    function progressBar(id,value){
+        //alert(id + " " + value);
+        document.getElementById(id).value = (100 - value);
+        document.getElementById(id).title = (100 - value)+"%";
+    }
+</script>
+
 
 <!-- end of context -->
 {% endblock content %}

@@ -1,0 +1,78 @@
+{% extends '../layout.html' %}
+
+<!-- context -->
+{% block content %}
+
+{% if api_result %}
+<section class="result-page">
+    <h2 class="heading">Scanned Results</h2>
+    <table border="0">
+        <tr>
+            <td class="title">Scanned URL</td>
+            <td class="data">{{ api_result.url }}</td>
+        </tr>
+        <tr>
+            <td class="title">Prediction</td>
+            <td class="data"> {{ api_result.category }} </td>
+        </tr>
+        <tr>
+            <td class="title">Results</td>
+            <td class="data">{{api_result.result}}</td>
+        </tr>
+        <tr>
+            <td class="title">Date</td>
+            <td class="data"> {{ api_result.created_at }} </td>
+        </tr>
+    </table>
+
+    <div class="alert-info">
+        <h2 style="color: 
+        {% if api_result.category == 'Suspicious' %}
+        var(--warningColor)
+        {% elif api_result.category == 'harmless' %}
+        var(--secureColor)
+        {% elif api_result.category == 'Malicious' %}
+        var(--dangerColor)
+        {% endif %}
+        ;">Alert ! {{ api_result.result }}
+        </h2>
+        <small> {{ api_result.type }}  
+
+            {% if api_result.category == 'Suspicious' %}
+               This URL or site appears suspicious!It may contain unsafe content or contain some characteristics commonly found in phishing websites, scams, and other suspicious activities.Proceed with caution.
+            {% elif api_result.category == 'harmless' %}
+                This URL or site has been scanned and found to be safe, You can browse the site without concerns.
+            {% elif api_result.category == 'Malicious' %}
+                This URl has been identified as malicious. Visiting this site may harm your computer or compromise your personal information.it is strongly recommended that you avoid accessing this site.        
+            {% endif %}
+        </small>
+        
+    </div>
+
+    <div class="risk-level" style="color: 
+        {% if api_result.category == 'Suspicious' %}
+            var(--warningColor)
+        {% elif api_result.category == 'harmless' %}
+            var(--secureColor)
+        {% elif api_result.category == 'Malicious' %}
+            var(--dangerColor)
+        {% endif %}
+    !important;">
+        <span>Risk:</span>
+        <span>
+        {% if api_result.malicious < 10 and api_result.suspicious < 10 and api_result.harmless > 50 %}
+            Low
+        {% elif api_result.malicious < 30 or api_result.suspicious > 50 and api_result.harmless < 50 %}
+            Medium
+        {% elif api_result.malicious > 30 or api_result.suspicious > 30 and api_result.harmless < 50 %}
+            Dangerous
+        {% else %}
+            Undetected
+        {% endif %}
+        </span>
+    </div>
+</section>
+{% endif %}
+
+<!-- end of context -->
+{% endblock content %}

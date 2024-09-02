@@ -33,130 +33,73 @@
                 </tr>
             </thead>
             <tbody>
+                {% for report in allreports %}
+                <tr onclick="">
+                    <script>
+                        setTimeout(() => {
+                            progressBar('progress-{{report.id}}',
+                            {% if report.malicious < 10 and report.suspicious < 10 and report.harmless > 50 %}
+                                {{report.harmless}}
+                            {% elif report.malicious < 30 or report.suspicious > 50 and report.harmless < 50 %}
+                                {{report.suspicious}}
+                            {% elif report.malicious > 30 or report.suspicious > 30 and report.harmless < 50 %}
+                                {{report.malicious}}
+                            {% else %}
+                                10
+                            {% endif %}
+                            ) //end of function
+                        }, 1000);
+                    </script>
 
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
+                    <td> {{report.id}}</td>
+                    <td title="{{ report.url }}"> <a href="/result/{{report.id}}"> <script> document.write("{{ report.url }}".slice(0,25)+" ..."); </script> </a> </td>
                     <td>
-                        <progress class="progress-danger" id="file" value="62" max="100" > 32% </progress>
+                        {% if report.malicious < 10 and report.suspicious < 10 and report.harmless > 50 %}
+                            Legitemate
+                        {% elif report.malicious < 30 or report.suspicious > 50 and report.harmless < 50 %}
+                            Warning
+                        {% elif report.malicious > 30 or report.suspicious > 30 and report.harmless < 50 %}
+                            Dangerous
+                        {% else %}
+                            Undetected
+                        {% endif %}
                     </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
-                </tr>
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
                     <td>
-                        <progress class="progress-warning" id="file" value="62" max="100" > 32% </progress>
-                    </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
-                </tr>
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
-                    <td>
-                        <progress class="progress-secure" id="file" value="62" max="100" > 32% </progress>
-                    </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
-                </tr>
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
-                    <td>
-                        <progress class="progress-warning" id="file" value="62" max="100" > 32% </progress>
-                    </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
-                </tr>
-                
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
-                    <td>
-                        <progress class="progress-danger" id="file" value="62" max="100" > 32% </progress>
-                    </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
-                </tr>
+                        <progress style="cursor: pointer;" class="
+                        {% if report.malicious < 10 and report.suspicious < 10 and report.harmless > 50 %}
+                            progress-secure
+                        {% elif report.malicious < 30 or report.suspicious > 50 and report.harmless < 50 %}
+                            progress-warning
+                        {% elif report.malicious > 30 or report.suspicious > 30 and report.harmless < 50 %}
+                            progress-danger
+                        {% else %}
+                            Undetected
+                        {% endif %}
 
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
-                    <td>
-                        <progress class="progress-secure" id="file" value="62" max="100" > 32% </progress>
+                        "
+                        title=""
+                        id="progress-{{report.id}}" 
+                        value="0" max="100" > 32% </progress>
                     </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
+                    <td>{{ report.category }}</td>
+                    <td>{{ report.created_at }}</td>
                 </tr>
 
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
-                    <td>
-                        <progress class="progress-danger" id="file" value="62" max="100" > 32% </progress>
-                    </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
-                </tr>
-                
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
-                    <td>
-                        <progress class="progress-secure" id="file" value="62" max="100" > 32% </progress>
-                    </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
-                </tr>
-
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
-                    <td>
-                        <progress class="progress-danger" id="file" value="62" max="100" > 32% </progress>
-                    </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
-                </tr>
-                
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
-                    <td>
-                        <progress class="progress-secure" id="file" value="62" max="100" > 32% </progress>
-                    </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
-                </tr>
-
-                <tr>
-                    <td>isbat</td>
-                    <td>https://www.isbat.com</td>
-                    <td>Dangerous</td>
-                    <td>
-                        <progress class="progress-danger" id="file" value="62" max="100" > 32% </progress>
-                    </td>
-                    <td>Results</td>
-                    <td>45:00:00 01/01/2024</td>
-                </tr>
-                
+                {% endfor %}
+              
             </tbody>
             <tfoot></tfoot>
         </table>
     </section>
 </section>
+
+<script>
+    function progressBar(id,value){
+        //alert(id + " " + value);
+        document.getElementById(id).value = (100 - value);
+        document.getElementById(id).title = (100 - value)+"%";
+    }
+</script>
 
 <!-- end of context -->
 {% endblock content %}

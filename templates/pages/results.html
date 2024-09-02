@@ -3,7 +3,7 @@
 <!-- context -->
 {% block content %}
 
-{% if url %}
+{% if api_result %}
 <section class="result-page">
     <h2 class="heading">Scanned Results</h2>
     <table border="0">
@@ -13,26 +13,63 @@
         </tr>
         <tr>
             <td class="title">Prediction</td>
-            <td class="data">{{ "Fraudulent" if prediction else "Legitimate" }} </td>
+            <td class="data"> {{ api_result.data.attributes.results.Acronis.category }} </td>
         </tr>
         <tr>
             <td class="title">Results</td>
-            <td class="data">--</td>
+            <td class="data">{{api_result.data.attributes.results.Acronis.result}}</td>
         </tr>
         <tr>
             <td class="title">Date</td>
-            <td class="data">--</td>
+            <td class="data"> {{ api_result.data.attributes.date }} </td>
         </tr>
     </table>
 
     <div class="alert-info">
-        <h2 style="color: var(--warningColor);">Alert ! Not Secure</h2>
-        <small>This URL looks to be harmful to your system please don't click on it</small>
+        <h2 style="color: 
+        {% if api_result.data.attributes.results.Acronis.category == 'Suspicious' %}
+        var(--warningColor)
+        {% elif api_result.data.attributes.results.Acronis.category == 'harmless' %}
+        var(--secureColor)
+        {% elif api_result.data.attributes.results.Acronis.category == 'Malicious' %}
+        var(--dangerColor)
+        {% endif %}
+        ;">Alert ! {{ api_result.data.attributes.results.Acronis.result }}
+        </h2>
+        <small> {{ api_result.data.type }}  
+
+            {% if api_result.data.attributes.results.Acronis.category == 'Suspicious' %}
+               This URL or site appears suspicious!It may contain unsafe content or contain some characteristics commonly found in phishing websites, scams, and other suspicious activities.Proceed with caution.
+            {% elif api_result.data.attributes.results.Acronis.category == 'harmless' %}
+                This URL or site has been scanned and found to be safe, You can browse the site without concerns.
+            {% elif api_result.data.attributes.results.Acronis.category == 'Malicious' %}
+                This URl has been identified as malicious. Visiting this site may harm your computer or compromise your personal information.it is strongly recommended that you avoid accessing this site.        
+            {% endif %}
+        </small>
+        
     </div>
 
-    <div class="risk-level" style="color: var(--warningColor) !important;">
+    <div class="risk-level" style="color: 
+        {% if api_result.data.attributes.results.Acronis.category == 'Suspicious' %}
+            var(--warningColor)
+        {% elif api_result.data.attributes.results.Acronis.category == 'harmless' %}
+            var(--secureColor)
+        {% elif api_result.data.attributes.results.Acronis.category == 'Malicious' %}
+            var(--dangerColor)
+        {% endif %}
+    !important;">
         <span>Risk:</span>
-        <span>{{ api_result.status }}</span>
+        <span>
+        {% if api_result.data.attributes.stats.malicious < 10 and api_result.data.attributes.stats.suspicious < 10 and api_result.data.attributes.stats.harmless > 50 %}
+            Low
+        {% elif api_result.data.attributes.stats.malicious < 30 or api_result.data.attributes.stats.suspicious > 50 and api_result.data.attributes.stats.harmless < 50 %}
+            Medium
+        {% elif api_result.data.attributes.stats.malicious > 30 or api_result.data.attributes.stats.suspicious > 30 and api_result.data.attributes.stats.harmless < 50 %}
+            Dangerous
+        {% else %}
+            Undetected
+        {% endif %}
+        </span>
     </div>
 </section>
 {% endif %}

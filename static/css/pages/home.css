@@ -32,8 +32,19 @@
   margin-top: 2%;
 }
 
-.home-page form input { /* .input_url */
+.home-page form label{
+  display: none !important;
+}
+
+.home-page form p{
+  margin-left: 0px;
+  margin-right: 0px;
   width: 50%;
+
+}
+
+.home-page form p input, .input_url{
+  width: 100% !important;
   height: 40px;
   border-radius: 30px;
   border: none;
@@ -55,6 +66,9 @@
   font-family: var(--primaryFont);
   font-weight: bold;
   text-align: center;
-  background-color: var(--buttonbg);
-  color: var(--white);
+  background-color: rgba(0, 0, 0, 0.824);
+  color: white;
+  cursor: pointer;
+  /* background-color: var(--buttonbg);
+  color: var(--black); */
 }
