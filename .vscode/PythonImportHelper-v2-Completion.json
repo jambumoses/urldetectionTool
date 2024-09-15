@@ -330,7 +330,7 @@
         "kind": 5,
         "importPath": "base.urls",
         "description": "base.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.home, name=\"home\"),\n    path('dashboard', views.dashboard, name=\"dashboard\"),\n    path('results', views.results, name=\"results\"),\n    path('report', views.report, name=\"report\"),\n    path('docs', views.docs, name=\"docs\"),\n    path('search/', views.search, name=\"search\"),\n    path('result/<int:id>', views.singleResult, name=\"result\"),\n    #category\n    #path('tag/<str:category>', views.categories, name=\"categories\"),",
+        "peekOfCode": "urlpatterns = [\n    path('', views.home, name=\"home\"),\n    path('dashboard', views.dashboard, name=\"dashboard\"),\n    path('results', views.results, name=\"results\"),\n    path('report', views.report, name=\"report\"),\n    path('docs', views.docs, name=\"docs\"),\n    path('search/', views.search, name=\"search\"),\n    path('result/<int:id>', views.singleResult, name=\"result\"),\n]\n#TODO",
         "detail": "base.urls",
         "documentation": {}
     },

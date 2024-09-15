@@ -1,3 +1,8 @@
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+
 .help-page {
   display: block;
   margin-top: -80px !important;
@@ -43,10 +48,11 @@
   font-size: 13px;
   font-family: var(defaultFont);
   text-align: left;
-  margin: 50px 0px;
+  margin: 0px 0px;
   padding: 0px;
+  margin-bottom: 50px;
   margin-right: 100px;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 .help-page a {
@@ -60,4 +66,41 @@
 
 .help-page .text-right {
   text-align: right;
+}
+
+.table-of-context{
+
+}
+
+.table-of-context li a{
+  margin-left: 10px;
+}
+
+.block{
+  margin: 0px 50px;
+}
+
+.block h5{
+  font-size: 20px;
+  margin-bottom: 10px !important;
+}
+
+.block p{
+  margin: auto 0px !important ;
+  margin-top: 10px !important;
+}
+
+.help-index-box{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: space-around;
+  padding: 0px;
+  height: auto;
+  max-height: 100px;
+}
+
+.help-index-box li{
+  margin: 5px;
 }
