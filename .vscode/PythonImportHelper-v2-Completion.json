@@ -1,0 +1,679 @@
+[
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "base.migrations.0001_initial",
+        "description": "base.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ScannedUrls',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('url', models.URLField(blank=True, null=True)),",
+        "detail": "base.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "base.migrations.0002_rename__id_scannedurls_url_id",
+        "description": "base.migrations.0002_rename__id_scannedurls_url_id",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('base', '0001_initial'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='scannedurls',\n            old_name='_id',\n            new_name='url_id',\n        ),",
+        "detail": "base.migrations.0002_rename__id_scannedurls_url_id",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "base.migrations.0003_alter_scannedurls_date",
+        "description": "base.migrations.0003_alter_scannedurls_date",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('base', '0002_rename__id_scannedurls_url_id'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='scannedurls',\n            name='date',\n            field=models.TextField(blank=True, null=True),\n        ),",
+        "detail": "base.migrations.0003_alter_scannedurls_date",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "base.migrations.0004_alter_scannedurls_date_alter_scannedurls_scan_id_and_more",
+        "description": "base.migrations.0004_alter_scannedurls_date_alter_scannedurls_scan_id_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('base', '0003_alter_scannedurls_date'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='scannedurls',\n            name='date',\n            field=models.CharField(blank=True, max_length=200, null=True),\n        ),",
+        "detail": "base.migrations.0004_alter_scannedurls_date_alter_scannedurls_scan_id_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "BaseConfig",
+        "kind": 6,
+        "importPath": "base.apps",
+        "description": "base.apps",
+        "peekOfCode": "class BaseConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'base'",
+        "detail": "base.apps",
+        "documentation": {}
+    },
+    {
+        "label": "URLForm",
+        "kind": 6,
+        "importPath": "base.forms",
+        "description": "base.forms",
+        "peekOfCode": "class URLForm(forms.Form):\n    url = forms.URLField(label='', max_length=200, widget=forms.URLInput(attrs={'name':'url', 'class': 'input_url', 'placeholder': 'Enter your URL here'}))",
+        "detail": "base.forms",
+        "documentation": {}
+    },
+    {
+        "label": "ScannedUrls",
+        "kind": 6,
+        "importPath": "base.models",
+        "description": "base.models",
+        "peekOfCode": "class ScannedUrls(models.Model):\n   url = models.URLField(null=True, blank=True)\n   api_result = models.JSONField(null=True, blank=True)\n   url_id = models.CharField(max_length=500, null=True, blank=True)\n   scan_id = models.CharField(max_length=500, null=True, blank=True)\n   _type = models.CharField(max_length=200, null=True, blank=True)\n   link_item = models.URLField(null=True, blank=True)\n   link_self = models.URLField(null=True, blank=True)\n   date = models.CharField(max_length=200, null=True, blank=True)\n   malicious = models.IntegerField(null=True, blank=True) ",
+        "detail": "base.models",
+        "documentation": {}
+    },
+    {
+        "label": "#X",
+        "kind": 5,
+        "importPath": "base.models",
+        "description": "base.models",
+        "peekOfCode": "#X = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]  # Replace with real features\n#y = [0, 1, 0]  # Replace with real labels\n# scaler = StandardScaler()\n# X_scaled = scaler.fit_transform(X)\n# model = SVC(kernel='linear', C=1)\n# model.fit(X_scaled, y)\n# # Save the model and scaler\n# joblib.dump(model, 'svm_model.pkl')\n# joblib.dump(scaler, 'scaler.pkl')",
+        "detail": "base.models",
+        "documentation": {}
+    },
+    {
+        "label": "#y",
+        "kind": 5,
+        "importPath": "base.models",
+        "description": "base.models",
+        "peekOfCode": "#y = [0, 1, 0]  # Replace with real labels\n# scaler = StandardScaler()\n# X_scaled = scaler.fit_transform(X)\n# model = SVC(kernel='linear', C=1)\n# model.fit(X_scaled, y)\n# # Save the model and scaler\n# joblib.dump(model, 'svm_model.pkl')\n# joblib.dump(scaler, 'scaler.pkl')",
+        "detail": "base.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "base.urls",
+        "description": "base.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.home, name=\"home\"),\n    path('dashboard', views.dashboard, name=\"dashboard\"),\n    path('results', views.results, name=\"results\"),\n    path('report', views.report, name=\"report\"),\n    path('docs', views.docs, name=\"docs\"),\n    path('search/', views.search, name=\"search\"),\n    path('result/<int:id>', views.singleResult, name=\"result\"),\n    #category\n    #path('tag/<str:category>', views.categories, name=\"categories\"),",
+        "detail": "base.urls",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "base.views",
+        "description": "base.views",
+        "peekOfCode": "def home(request):\n    if request.method == 'POST':\n        form = URLForm(request.POST)\n        if form.is_valid():\n            url = form.cleaned_data['url']\n            vt_result, gs_result, overall_safe = check_url(url)\n            #vt_result = json.dump(vt_result)\n            #risk_dist = (100 - 63)\n            risk_dist = (100 - vt_result['data']['attributes']['stats']['harmless'])\n            #populate database",
+        "detail": "base.views",
+        "documentation": {}
+    },
+    {
+        "label": "dashboard",
+        "kind": 2,
+        "importPath": "base.views",
+        "description": "base.views",
+        "peekOfCode": "def dashboard(request):\n    # legitemate = \"\"\n    # warning = \"\"\n    # dangerous = \"\"\n    # undetected = \"\"\n    # if (report.malicious < 10) and (report.suspicious < 10) and (report.harmless > 50):\n    #     legitemate = \"Legitemate\"\n    # elif (report.malicious < 30) or (report.suspicious > 50) and (report.harmless < 50):\n    #     warning = \"Warning\"\n    # elif (report.malicious > 30) or (report.suspicious > 30) and (report.harmless < 50):",
+        "detail": "base.views",
+        "documentation": {}
+    },
+    {
+        "label": "results",
+        "kind": 2,
+        "importPath": "base.views",
+        "description": "base.views",
+        "peekOfCode": "def results(request):\n    # return render(request, 'pages/results.html',\n    # {\n    #     #page needs\n    #     'page_title': \"Fraud Detection\",\n    #     'page':'Results',\n    # }\n    # )\n    return redirect('home')\ndef singleResult(request,id):",
+        "detail": "base.views",
+        "documentation": {}
+    },
+    {
+        "label": "singleResult",
+        "kind": 2,
+        "importPath": "base.views",
+        "description": "base.views",
+        "peekOfCode": "def singleResult(request,id):\n    singleReport = {}\n    risk_dist = 0\n    cleaned_reports = list()\n    for report in allreports:\n        if report['malicious'] < 10 and report['suspicious'] < 10 and report['harmless'] > 50:\n            report['category'] = 'Harmless'\n        elif report['malicious'] < 30 or report['suspicious'] > 50 and report['harmless'] < 50:\n            report['category'] = 'Suspicious'\n        elif report['malicious'] > 30 or report['suspicious'] > 30 and report['harmless'] < 50:",
+        "detail": "base.views",
+        "documentation": {}
+    },
+    {
+        "label": "report",
+        "kind": 2,
+        "importPath": "base.views",
+        "description": "base.views",
+        "peekOfCode": "def report(request):\n    maliciousCount = 0\n    suspiciousCount = 0\n    harmlessCount = 0 \n    cleaned_reports = list()\n    for report in allreports:\n        if report['malicious'] < 10 and report['suspicious'] < 10 and report['harmless'] > 50:\n            report['category'] = 'Harmless'\n            harmlessCount = harmlessCount + 1\n        elif report['malicious'] < 30 or report['suspicious'] > 50 and report['harmless'] < 50:",
+        "detail": "base.views",
+        "documentation": {}
+    },
+    {
+        "label": "docs",
+        "kind": 2,
+        "importPath": "base.views",
+        "description": "base.views",
+        "peekOfCode": "def docs(request):\n    return render(request, 'pages/docs.html',\n    {\n        #page needs\n        'page_title': \"Fraud Detection Help Center\",\n        'page':'Docs',\n    }\n    )\n# functions\n# def check_url_with_api(url):",
+        "detail": "base.views",
+        "documentation": {}
+    },
+    {
+        "label": "search",
+        "kind": 2,
+        "importPath": "base.views",
+        "description": "base.views",
+        "peekOfCode": "def search(request):\n    search_string = request.GET.get('search','default')\n    maliciousCount = 0\n    suspiciousCount = 0\n    harmlessCount = 0 \n    cleaned_reports = list()\n    #ScannedUrls.objects.all().filter(url__icontains=search_string).order_by('-id').values()\n    for report in ScannedUrls.objects.filter(url__icontains=search_string).order_by('-id').values():\n        if report['malicious'] < 10 and report['suspicious'] < 10 and report['harmless'] > 50:\n            report['category'] = 'Harmless'",
+        "detail": "base.views",
+        "documentation": {}
+    },
+    {
+        "label": "check_url",
+        "kind": 2,
+        "importPath": "base.views",
+        "description": "base.views",
+        "peekOfCode": "def check_url(url):\n    # VirusTotal URL submission\n    vt_url = 'https://www.virustotal.com/api/v3/urls'\n    headers = {'x-apikey': VIRUSTOTAL_API_KEY}\n    data = {'url': url}\n    vt_response = requests.post(vt_url, headers=headers, data=data)\n    vt_result = vt_response.json()\n    # Extract analysis ID for detailed results\n    analysis_id = vt_result.get('data', {}).get('id')\n    if not analysis_id:",
+        "detail": "base.views",
+        "documentation": {}
+    },
+    {
+        "label": "allreports",
+        "kind": 5,
+        "importPath": "base.views",
+        "description": "base.views",
+        "peekOfCode": "allreports = ScannedUrls.objects.all().order_by('-id').values()\n# Load the trained SVM model\n#model = joblib.load('svm_model.pkl')\n#scaler = joblib.load('scaler.pkl')\n# API Keys\nVIRUSTOTAL_API_KEY = '5b7a2ee262a1786aea2a18243fd40c4bbd7e62cc6dbef8dece8381ebf19d5c32'\nGOOGLE_SAFE_BROWSING_API_KEY = 'AIzaSyDUWGLTF42vj28CC55NfO5DRABRIicQrKs'\n# Create your views here.\ndef home(request):\n    if request.method == 'POST':",
+        "detail": "base.views",
+        "documentation": {}
+    },
+    {
+        "label": "#model",
+        "kind": 5,
+        "importPath": "base.views",
+        "description": "base.views",
+        "peekOfCode": "#model = joblib.load('svm_model.pkl')\n#scaler = joblib.load('scaler.pkl')\n# API Keys\nVIRUSTOTAL_API_KEY = '5b7a2ee262a1786aea2a18243fd40c4bbd7e62cc6dbef8dece8381ebf19d5c32'\nGOOGLE_SAFE_BROWSING_API_KEY = 'AIzaSyDUWGLTF42vj28CC55NfO5DRABRIicQrKs'\n# Create your views here.\ndef home(request):\n    if request.method == 'POST':\n        form = URLForm(request.POST)\n        if form.is_valid():",
+        "detail": "base.views",
+        "documentation": {}
+    },
+    {
+        "label": "#scaler",
+        "kind": 5,
+        "importPath": "base.views",
+        "description": "base.views",
+        "peekOfCode": "#scaler = joblib.load('scaler.pkl')\n# API Keys\nVIRUSTOTAL_API_KEY = '5b7a2ee262a1786aea2a18243fd40c4bbd7e62cc6dbef8dece8381ebf19d5c32'\nGOOGLE_SAFE_BROWSING_API_KEY = 'AIzaSyDUWGLTF42vj28CC55NfO5DRABRIicQrKs'\n# Create your views here.\ndef home(request):\n    if request.method == 'POST':\n        form = URLForm(request.POST)\n        if form.is_valid():\n            url = form.cleaned_data['url']",
+        "detail": "base.views",
+        "documentation": {}
+    },
+    {
+        "label": "VIRUSTOTAL_API_KEY",
+        "kind": 5,
+        "importPath": "base.views",
+        "description": "base.views",
+        "peekOfCode": "VIRUSTOTAL_API_KEY = '5b7a2ee262a1786aea2a18243fd40c4bbd7e62cc6dbef8dece8381ebf19d5c32'\nGOOGLE_SAFE_BROWSING_API_KEY = 'AIzaSyDUWGLTF42vj28CC55NfO5DRABRIicQrKs'\n# Create your views here.\ndef home(request):\n    if request.method == 'POST':\n        form = URLForm(request.POST)\n        if form.is_valid():\n            url = form.cleaned_data['url']\n            vt_result, gs_result, overall_safe = check_url(url)\n            #vt_result = json.dump(vt_result)",
+        "detail": "base.views",
+        "documentation": {}
+    },
+    {
+        "label": "GOOGLE_SAFE_BROWSING_API_KEY",
+        "kind": 5,
+        "importPath": "base.views",
+        "description": "base.views",
+        "peekOfCode": "GOOGLE_SAFE_BROWSING_API_KEY = 'AIzaSyDUWGLTF42vj28CC55NfO5DRABRIicQrKs'\n# Create your views here.\ndef home(request):\n    if request.method == 'POST':\n        form = URLForm(request.POST)\n        if form.is_valid():\n            url = form.cleaned_data['url']\n            vt_result, gs_result, overall_safe = check_url(url)\n            #vt_result = json.dump(vt_result)\n            #risk_dist = (100 - 63)",
+        "detail": "base.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "fraud_detection_system.asgi",
+        "description": "fraud_detection_system.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "fraud_detection_system.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-(bft^&srm&6*4n9qh76j2al&z%+qxfoa_(kxksel-n!9d0x24r'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-(bft^&srm&6*4n9qh76j2al&z%+qxfoa_(kxksel-n!9d0x24r'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'base.apps.BaseConfig'",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'base.apps.BaseConfig'\n]\nMIDDLEWARE = [",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'fraud_detection_system.urls'",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "ROOT_URLCONF = 'fraud_detection_system.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [\n            BASE_DIR / 'templates'\n        ],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [\n            BASE_DIR / 'templates'\n        ],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'fraud_detection_system.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR,\"static\"),\n]",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR,\"static\"),\n]\n# Default primary key field type",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR,\"static\"),\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR,\"static\"),\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "STATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR,\"static\"),\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n\"\"\" images upload \"\"\"\nMEDIA_ROOT = BASE_DIR/'media'\nMEDIA_URL = '/media/'",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "STATICFILES_DIRS = [\n    os.path.join(BASE_DIR,\"static\"),\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n\"\"\" images upload \"\"\"\nMEDIA_ROOT = BASE_DIR/'media'\nMEDIA_URL = '/media/'",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n\"\"\" images upload \"\"\"\nMEDIA_ROOT = BASE_DIR/'media'\nMEDIA_URL = '/media/'",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "MEDIA_ROOT = BASE_DIR/'media'\nMEDIA_URL = '/media/'",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "fraud_detection_system.settings",
+        "description": "fraud_detection_system.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'",
+        "detail": "fraud_detection_system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "fraud_detection_system.urls",
+        "description": "fraud_detection_system.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('base.urls'))\n]\nurlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) #new\n#handler404 = 'base.views.custom_404'",
+        "detail": "fraud_detection_system.urls",
+        "documentation": {}
+    },
+    {
+        "label": "#handler404",
+        "kind": 5,
+        "importPath": "fraud_detection_system.urls",
+        "description": "fraud_detection_system.urls",
+        "peekOfCode": "#handler404 = 'base.views.custom_404'",
+        "detail": "fraud_detection_system.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "fraud_detection_system.wsgi",
+        "description": "fraud_detection_system.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "fraud_detection_system.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'fraud_detection_system.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

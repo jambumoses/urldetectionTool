@@ -29,7 +29,7 @@
         <h2 style="color: 
         {% if api_result.data.attributes.results.Acronis.category == 'Suspicious' %}
         var(--warningColor)
-        {% elif api_result.data.attributes.results.Acronis.category == 'harmless' %}
+        {% elif api_result.data.attributes.results.Acronis.category == 'Harmless' %}
         var(--secureColor)
         {% elif api_result.data.attributes.results.Acronis.category == 'Malicious' %}
         var(--dangerColor)
@@ -40,7 +40,7 @@
 
             {% if api_result.data.attributes.results.Acronis.category == 'Suspicious' %}
                This URL or site appears suspicious!It may contain unsafe content or contain some characteristics commonly found in phishing websites, scams, and other suspicious activities.Proceed with caution.
-            {% elif api_result.data.attributes.results.Acronis.category == 'harmless' %}
+            {% elif api_result.data.attributes.results.Acronis.category == 'Harmless' %}
                 This URL or site has been scanned and found to be safe, You can browse the site without concerns.
             {% elif api_result.data.attributes.results.Acronis.category == 'Malicious' %}
                 This URl has been identified as malicious. Visiting this site may harm your computer or compromise your personal information.it is strongly recommended that you avoid accessing this site.        
@@ -52,7 +52,7 @@
     <div class="risk-level" style="color: 
         {% if api_result.data.attributes.results.Acronis.category == 'Suspicious' %}
             var(--warningColor)
-        {% elif api_result.data.attributes.results.Acronis.category == 'harmless' %}
+        {% elif api_result.data.attributes.results.Acronis.category == 'Harmless' %}
             var(--secureColor)
         {% elif api_result.data.attributes.results.Acronis.category == 'Malicious' %}
             var(--dangerColor)

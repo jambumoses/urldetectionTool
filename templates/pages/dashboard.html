@@ -80,6 +80,23 @@
                             {% else %}
                                 10
                             {% endif %}
+                            ,
+                            {{report.harmless}},
+                            {{report.suspicious}},
+                            {{report.malicious}},
+                            {{report.undetected}},
+                            //type
+
+                            {% if report.malicious < 10 and report.suspicious < 10 and report.harmless > 50 %}
+                                'harmless'
+                            {% elif report.malicious < 30 or report.suspicious > 50 and report.harmless < 50 %}
+                                'suspicious'
+                            {% elif report.malicious > 30 or report.suspicious > 30 and report.harmless < 50 %}
+                                'malicious'
+                            {% else %}
+                                
+                            {% endif %}
+
                             ) //end of function
                         }, 1000);
                     </script>
@@ -112,7 +129,7 @@
                         "
                         title=""
                         id="progress-{{report.id}}" 
-                        value="0" max="100" > 32% </progress>
+                        value="0" max="100" >  </progress>
                     </td>
                     <td>{{ report.category }}</td>
                     <td>{{ report.created_at }}</td>
@@ -128,11 +145,38 @@
 </section>
 
 <script>
-    function progressBar(id,value){
+    function progressBar(id,value,harmless,suspicious,malicious,undetected,type){
+        var total_fn = harmless + suspicious + malicious + undetected;
+        var range_fn = Math.max(harmless, suspicious, malicious, undetected) - Math.min(harmless, suspicious, malicious, undetected);
+        var average_fn = harmless + suspicious + malicious + undetected / 4;
+        var test_fn = (total_fn + average_fn-range_fn*2);//(total_fn / average_fn)
         //alert(id + " " + value);
-        document.getElementById(id).value = (100 - value);
-        document.getElementById(id).title = (100 - value)+"%";
+        //document.getElementById(id).value = (50 - value );
+        //document.getElementById(id).value = (33.3-harmless+33.3-suspicious+33.3-malicious) ;
+        //document.getElementById(id).title = 33.3 + 33.3 + 33.3 - value +"%";
+
+
+        switch(type){
+            case 'harmless':
+            document.getElementById(id).value = test_fn;
+            document.getElementById(id).title = test_fn+ "%";
+            break;
+            case 'suspicious':
+            document.getElementById(id).value = test_fn;
+            document.getElementById(id).title = test_fn + "%";
+            break;
+            case 'malicious':
+            document.getElementById(id).value = test_fn;
+            document.getElementById(id).title = test_fn + "%";
+            break;
+            default:
+            break;
+        }
+
+
     }
+
+
 </script>
 
 

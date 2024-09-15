@@ -40,13 +40,12 @@
   margin-left: 0px;
   margin-right: 0px;
   width: 50%;
-
 }
 
 .home-page form p input, .input_url{
   width: 100% !important;
-  height: 40px;
-  border-radius: 30px;
+  height: 50px;
+  border-radius: 6px;
   border: none;
   background-color: var(--white);
   padding: 0px 20px;

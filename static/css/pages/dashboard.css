@@ -100,12 +100,14 @@
 .dashboard-page .dash-tables {
   border-radius: 0px !important;
   overflow-y: auto;
-  overflow-x: auto;
+  overflow-x: hidden;
   padding: 0px;
 }
 
 .dash-tables table {
   width: 100%;
+  margin-top: 10px !important;
+  margin-left: 10px !important;
   position: relative;
   border: none;
   padding: 0px;

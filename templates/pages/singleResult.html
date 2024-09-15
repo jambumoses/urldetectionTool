@@ -40,7 +40,7 @@
 
             {% if api_result.category == 'Suspicious' %}
                This URL or site appears suspicious!It may contain unsafe content or contain some characteristics commonly found in phishing websites, scams, and other suspicious activities.Proceed with caution.
-            {% elif api_result.category == 'harmless' %}
+            {% elif api_result.category == 'Harmless' %}
                 This URL or site has been scanned and found to be safe, You can browse the site without concerns.
             {% elif api_result.category == 'Malicious' %}
                 This URl has been identified as malicious. Visiting this site may harm your computer or compromise your personal information.it is strongly recommended that you avoid accessing this site.        
@@ -52,7 +52,7 @@
     <div class="risk-level" style="color: 
         {% if api_result.category == 'Suspicious' %}
             var(--warningColor)
-        {% elif api_result.category == 'harmless' %}
+        {% elif api_result.category == 'Harmless' %}
             var(--secureColor)
         {% elif api_result.category == 'Malicious' %}
             var(--dangerColor)
